@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import Button from './ui-library/Button/Button'
+import SmButton from './ui-library/Button/Button'
 import './App.css'
 import { ThemeProvider } from './context/ThemeContext'
 
@@ -10,7 +9,9 @@ function App() {
   return (
     <ThemeProvider>
       <div>
-        <Button label={'İlk component !'} onClick={handleClick} />
+        <SmButton label={'İlk component !'} onClick={handleClick} variant="ghost" id="1"/>
+        <SmButton label={'İlk component !'} onClick={handleClick} variant="default"/>
+        <SmButton label={'İlk component !'} onClick={handleClick} variant="rounded"/>
       </div>
     </ThemeProvider>
   )
